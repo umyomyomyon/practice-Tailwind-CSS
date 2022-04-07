@@ -54,10 +54,15 @@ module.exports = {
         allowAsStatement: true,
       },
     ],
+    // アロー関数でコンポーネントを定義できなくなるのでoff
     'react/function-component-definition': [
       2,
       { namedComponents: 'arrow-function' }
-    ]
+    ],
+    // propsに必須ではないプロパティhoge?があるときにエラーが出てしまうのでoff
+    'react/require-default-props': "off",
+    // 邪魔なのでoff
+    'react/prop-types': "off"
  },
  settings: {
    'import/resolver': {
