@@ -17,8 +17,8 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <Container justify='center'>
-            <Button text={'List'} onClick={handleListButtonClick} />
-            <Button text={'Card'} onClick={handleCardButtonClick} />
+            <Button text='List' onClick={handleListButtonClick} />
+            <Button text='Card' onClick={handleCardButtonClick} />
         </Container>
         {isListOpen && <ListContainer />}
       </header>
