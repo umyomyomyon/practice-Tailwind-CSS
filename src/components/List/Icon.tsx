@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 interface ListItemIconProps {
-    src?: string
+    src: string
 }
 
+const ListItemIcon: React.FC<ListItemIconProps> = ({ src }) => (
+    <img className="mr-4" src={src} alt="icon" />
+)
 
-const ListItemIcon: React.FC<ListItemIconProps> = ({ src }) => {
-    return <img className='mr-4' src={src} alt='icon'/>
-}
-
-export default ListItemIcon;
+export default ListItemIcon
